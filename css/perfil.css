@@ -1,6 +1,6 @@
 
 body {
-    background-image: url('WallpaperFundo.svg'); 
+    background-image: url('../img/WallpaperFundo.svg'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
