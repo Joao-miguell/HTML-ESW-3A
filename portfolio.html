@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos em Destaque</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li id="foto-perfil"><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <h1>Produtos em Destaque</h1>
+    </header>
+
+
+    <main>
+        <section class="product-container">
+
+            <div class="product-card">
+                <img src="./img/camisa.jpg" alt="Produto 1">
+                <h2>Camisa do DRAKE</h2>
+                <p class="description">Camisa do Drake de verdade.</p>
+                <p class="price">R$ 99,99</p>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./img/quadro.jpg" alt="Produto 2">
+                <h2>Quadro supercool do DRAKE</h2>
+                <p class="description">Quadro que o filho do drake pintou quando tava na barriga do Drake.</p>
+                <p class="price">R$ 3929,99</p>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./img/shampoo.jpg" alt="Produto 3">
+                <h2>Shampoo do DRAKE</h2>
+                <p class="description">Shapoo na metade usado na própria cabeça do Drake.</p>
+                <p class="price">R$ 999,99</p>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+        </section>
+
+        <div class="sidebar">
+            <h2>Filtros</h2>
+            <form>
+                <div class="filter-group">
+                    <label for="category">Categoria:</label>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Camisas</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Itens de Beleza</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Outros</label><br>
+                </div>
+                <button type="submit">Aplicar Filtros</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

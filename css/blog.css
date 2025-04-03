@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-image: url('../img/WallpaperFundo.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #a7dbd6;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Navegação */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a7dbd6;
+}
+
+/* Lista de postagens */
+.blog-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.blog-list article {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.blog-list article:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.blog-list h2 {
+    font-size: 24px;
+    color: #a7dbd6;
+    margin-bottom: 10px;
+}
+
+.blog-list p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.blog-list a {
+    color: #a7dbd6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.blog-list a:hover {
+    color: white;
+}
+
+/* Perguntas Frequentes */
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-container h1 {
+    font-size: 28px;
+    color: #a7dbd6;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+details {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+details:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+details summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+details summary:hover {
+    color: #a7dbd6;
+}
+
+.details-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+details[open] .details-content {
+    opacity: 1;
+    max-height: 1000px; /* Ajuste conforme necessário */
+}
+
+.faq-text {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Animação para abertura suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+details[open] .details-content {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Links */
+a {
+    color: #a7dbd6;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: white;
+}

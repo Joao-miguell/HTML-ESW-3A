@@ -1,0 +1,209 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-image: url('../img/WallpaperFundo.svg'); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Card de login */
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Navegação */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #a7dbd6;
+}
+
+
+/* IDs personalizados para os itens do menu */
+#menu-home a,
+#menu-perfil a,
+#menu-portfolio a,
+#menu-blog a,
+#menu-contato a,
+#menu-login a {
+    color: white;
+}
+
+/* Estilo do cabeçalho */
+header, main {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Imagem de perfil */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #a7dbd6;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #a7dbd6;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Campos de entrada com efeito flutuante */
+.label-float {
+    position: relative;
+    margin: 20px 0;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 10px 5px;
+    border: 0;
+    border-bottom: 2px solid #a7dbd6;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #a7dbd6;
+}
+
+.label-float label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #a7dbd6;
+}
+
+/* Botão de login */
+button {
+    background-color: transparent;
+    border: 2px solid #a7dbd6;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #a7dbd6;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #a7dbd6;
+    color: white;
+}
+
+/* Centralização */
+.justify-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Linha divisória */
+hr {
+    margin: 20px auto;
+    width: 60%;
+    border: 0;
+    border-top: 1px solid #a7dbd6;
+}
+
+/* Texto */
+p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+a {
+    color: #a7dbd6;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: white;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black; /* Cor padrão */
+    transition: color 0.3s ease;
+}
+
+.label-float input:focus ~ .eye-icon {
+    color: #a7dbd6; 
+}

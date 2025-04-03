@@ -1,0 +1,174 @@
+body {
+    background-image: url('../img/WallpaperFundo.svg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #a7dbd6;
+}
+
+
+header, main {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #a7dbd6;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+h1 {
+    color: #a7dbd6;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #ddd;
+}
+
+
+section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+h3 {
+    color: #a7dbd6;
+    font-size: 24px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+
+footer img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #a7dbd6;
+}
+
+/* estilo da seção de testemunhos */
+.testemunhos {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    color: white;
+    text-align: center;
+}
+
+/* título da seção */
+.testemunhos h3 {
+    font-size: 24px;
+    color: #a7dbd6;
+    margin-bottom: 20px;
+}
+
+/* estilo de cada testemunho */
+.testemunho {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* imagem do cliente */
+.testemunho img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-bottom: 10px;
+    border: 2px solid #a7dbd6; /* Borda com a cor principal */
+}
+
+/* texto do depoimento */
+.testemunho blockquote {
+    font-style: italic; /* Aplica o estilo itálico */
+    font-size: 16px;
+    color: #ddd;
+    margin: 10px 0;
+}
+
+/* nome do cliente */
+.testemunho .nome {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a7dbd6;
+    margin-top: 5px;
+}
