@@ -9,7 +9,6 @@ body {
     padding: 0;
 }
 
-
 nav {
     background: rgba(0, 0, 0, 0.6); 
     padding: 10px 0;
@@ -43,7 +42,6 @@ ul li a:hover {
     color: #a7dbd6; 
 }
 
-
 main {
     display: flex;
     justify-content: center;
@@ -52,7 +50,6 @@ main {
     text-align: center;
 }
 
-
 section {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -60,12 +57,10 @@ section {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-
 h3 {
     color: #a7dbd6;
     font-size: 24px;
 }
-
 
 section ul {
     padding: 0;

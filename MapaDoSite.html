@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mapa do Site</title>
+        <link rel="stylesheet" href="css/mapa.css">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px;
+            }
+
+            h1 {
+                color: white;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            li {
+                text-indent: 20px; 
+                margin: 5px 0;
+                position: relative;
+            }
+
+            li::before {
+                content: "▸";
+                position: absolute;
+                left: 0;
+                color: #555;
+            }
+
+            ul ul li {
+                text-indent: 40px;
+            }
+
+            ul ul ul li {
+                text-indent: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <body>
+            <nav>
+                <ul>
+                    <li><a href="promocoes.html">Promoções</a></li>
+                    <li><a href="GaleriaDeFotos.html">Galeria de Fotos</a></li>
+                    <li><a href="MapaDoSite.html">Mapa do Site</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li id="foto-perfil"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        
+        <main>
+            <h1>MAPA DO SITE</h1>
+            <div class="mapa-grid">
+                <a href="promocoes.html" class="botao">PROMOÇÕES</a>
+                <a href="GaleriaDeFotos.html" class="botao">GALERIA</a>
+                <a href="index.html" class="botao">HOME</a>
+                <a href="blog.html" class="botao">BLOG</a>
+                <a href="contato.html" class="botao">CONTATO</a>
+                <a href="login.html" class="botao">LOGIN</a>
+                <a href="perfil.html" class="botao">PERFIL</a>
+                <a href="portfolio.html" class="botao">PORTFOLIO</a>
+            </div>
+        </main>
+    </body>
+</html>

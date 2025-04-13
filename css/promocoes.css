@@ -1,0 +1,111 @@
+body {
+    background-image: url(../img/WallpaperFundo.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 80px 0 0;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #a7dbd6;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-promocoes {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.lista-promocoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.promocao-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.promocao-item:hover {
+    transform: translateY(-5px);
+}
+
+.promocao-imagem {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.promocao-info {
+    padding: 20px;
+}
+
+.promocao-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.promocao-info p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.precos {
+    margin-top: 15px;
+}
+
+.preco-original {
+    color: #ff0000;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.preco-promocao {
+    color: #009900;
+    font-size: 1.3em;
+    font-weight: bold;
+}
