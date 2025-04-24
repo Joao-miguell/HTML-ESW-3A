@@ -7,9 +7,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 80px 0 0;
-}
-
-nav {
+  }
+  
+  nav {
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 0;
     position: fixed;
@@ -17,130 +17,155 @@ nav {
     top: 0;
     left: 0;
     z-index: 100;
-}
-
-ul {
+  }
+  
+  ul {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-ul li {
+  }
+  
+  ul li {
     margin: 0 20px;
-}
-
-ul li a {
+  }
+  
+  ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
-}
-
-ul li a:hover {
+  }
+  
+  ul li a:hover {
     color: #a7dbd6;
-}
-
-/* Estilos para o produto */
-.container {
+  }
+  
+  /* Estilos do produto */
+  .product-launch {
     text-align: center;
+    margin-top: 100px;
     padding: 20px;
-}
-
-.product-launch {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor do produto */
     color: white;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-/* Fundo transparente para o texto */
-.product-launch::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* Fundo preto com 70% de transparência */
-    border-radius: 10px;
-    z-index: -1; /* Coloca o fundo atrás do conteúdo */
-}
-
-.product-name {
+  }
+  
+  .product-name {
     font-size: 2em;
     font-weight: bold;
     color: #a7dbd6;
-}
-
-.product-description {
+  }
+  
+  .product-description {
     font-size: 1.2em;
     color: #ffffff;
     margin-top: 10px;
-}
-
-.product-image {
+  }
+  
+  .product-image {
     margin-top: 20px;
     max-width: 300px;
     height: auto;
-    border-radius: 10px; /* Bordas arredondadas para a imagem */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da imagem */
-}
-
-/* Estilos para a contagem regressiva */
-.countdown-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos da contagem regressiva */
+  .countdown-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-}
-
-.countdown {
+    margin-top: 50px;
+  }
+  
+  .countdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.95); /* Fundo preto com 95% de transparência */
-    border-radius: 15px; /* Bordas arredondadas */
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
-}
-
-.countdown-digit {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .countdown-digit {
     font-size: 5em;
     font-weight: bold;
     color: white;
     background-color: #2c3e50;
     padding: 15px;
     border-radius: 8px;
-}
-
-.countdown-seconds-ones {
+  }
+  
+  .countdown-seconds-ones {
     position: relative;
-}
-
-.countdown-seconds-ones::before {
+  }
+  
+  .countdown-seconds-ones::before {
     content: "";
     animation: secondsOnes 10s infinite;
-}
-
-@keyframes secondsOnes {
-    0%, 9.99% { content: "9"; }
-    10%, 19.99% { content: "8"; }
-    20%, 29.99% { content: "7"; }
-    30%, 39.99% { content: "6"; }
-    40%, 49.99% { content: "5"; }
-    50%, 59.99% { content: "4"; }
-    60%, 69.99% { content: "3"; }
-    70%, 79.99% { content: "2"; }
-    80%, 89.99% { content: "1"; }
-    90%, 99.99% { content: "0"; }
+  }
+  
+  @keyframes secondsOnes {
+    0%, 9.99% { content: "10"; }
+    10%, 19.99% { content: "9"; }
+    20%, 29.99% { content: "8"; }
+    30%, 39.99% { content: "7"; }
+    40%, 49.99% { content: "6"; }
+    50%, 59.99% { content: "5"; }
+    60%, 69.99% { content: "4"; }
+    70%, 79.99% { content: "3"; }
+    80%, 89.99% { content: "2"; }
+    90%, 99.99% { content: "1"; }
     100% { content: "9"; }
-}
+  }
+  
+  /* Estilos para o formulário */
+  .formulario-pre-venda {
+    max-width: 360px;
+    margin: 70px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: flex;
+    gap: 15px;
+  }
+  
+  .formulario-pre-venda label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .formulario-pre-venda input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .formulario-pre-venda button {
+    background-color: #a7dbd6;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-pre-venda button:hover {
+    background-color: #8bc8c2;
+  }
+  
+  input:invalid + .telefone-erro {
+    display: block;
+  }
+  
